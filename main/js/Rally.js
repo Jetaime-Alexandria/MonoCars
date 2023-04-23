@@ -22,8 +22,8 @@ const {
 const
   floorImg = 'https://i.imgur.com/gj4AbSS.png',
   defualtcarImg = 'https://i.imgur.com/wAgJX0S.png',
-  ra1 = 'https://i.imgur.com/rHdu3PY.png';
-ra2 = 'https://i.imgur.com/H4nz04Y.png';
+  ra1 = '../models/bmw_m3_coupe_e30_1986.glb';
+  ra2 = 'https://i.imgur.com/H4nz04Y.png';
 
 
 
@@ -36,7 +36,7 @@ const slides = [
     desc: "★ Premium Only ★ Acceleration:Good / Brakes:Good / Handling:Good",
     color: "#FFC300",
     imgFloorUrl: floorImg,
-    imgUrl: ra1,
+    modelUrl: ra1,
     topSpeed: 110,
     slots: 4,
     seats: 1,
@@ -525,9 +525,9 @@ class Slide extends React.Component {
                 src: activeSlide.imgFloorUrl,
                 alt: ""
               }), /*#__PURE__*/
-              React.createElement("img", {
+              React.createElement("model-viewer", {
                 className: "monocar-slide__img-car",
-                src: activeSlide.imgUrl,
+                src: activeSlide.modelUrl,
                 alt: ""
               })))), /*#__PURE__*/
 
